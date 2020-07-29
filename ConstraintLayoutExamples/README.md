@@ -1,8 +1,8 @@
 MotionLayout / Constraint Layout Samples
 =========================
 This repository contains a list of layouts that showcases the various features and usage of
-[ConstraintLayout](https://developer.android.com/reference/android/support/constraint/ConstraintLayout.html) and 
-[MotionLayout](https://developer.android.com/reference/android/support/constraint/motion/MotionLayout)
+[ConstraintLayout](https://developer.android.google.cn/reference/android/support/constraint/ConstraintLayout.html) and 
+[MotionLayout](https://developer.android.google.cn/reference/android/support/constraint/motion/MotionLayout)
 
 Pre-requisites
 --------------
@@ -61,7 +61,7 @@ If you've found an error in this sample, please file an issue:
 https://github.com/android/views-widgets/issues
 
 To learn more about ConstraintLayout checkout the
-[Constraint Layout Training Guide](https://developer.android.com/training/constraint-layout/index.html)
+[Constraint Layout Training Guide](https://developer.android.google.cn/training/constraint-layout/index.html)
 
 Patches are encouraged, and may be submitted by forking this project and
 submitting a pull request through GitHub. Please see the [contributing guidelines](CONTRIBUTING.md) for more details.
