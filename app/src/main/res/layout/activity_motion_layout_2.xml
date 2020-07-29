@@ -1,0 +1,15 @@
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layoutDescription="@xml/activity_motion_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/motion_layout"
+    app:showPaths="true">
+
+    <View
+        android:background="@color/colorAccent"
+        android:id="@+id/view01"
+        android:layout_width="64dp"
+        android:layout_height="64dp"/>
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

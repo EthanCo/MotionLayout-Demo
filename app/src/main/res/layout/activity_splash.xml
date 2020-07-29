@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity">
+
+    <Button
+        android:id="@+id/btn_transition_manager_go"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="TransitionManager.go"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_motion_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="MotionLayout"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_motion_layout_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="MotionLayout2"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_motion_layout_3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="MotionLayout3"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_youtube_like"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="youtubeLike"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_coordinator_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="CoordinatorLayout"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_coordinator_layout_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="CoordinatorLayout2"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_new_ui"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="NEW UI"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:constraint_referenced_ids="btn_transition_manager_go,btn_motion_layout,btn_motion_layout_2,btn_motion_layout_3,btn_youtube_like,btn_coordinator_layout,btn_coordinator_layout_2,btn_new_ui"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

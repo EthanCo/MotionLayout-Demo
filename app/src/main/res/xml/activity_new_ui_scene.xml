@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--    app:motionInterpolator="easeInOut"-->
+    <Transition
+        app:constraintSetEnd="@id/end"
+        app:constraintSetStart="@+id/start"
+        app:duration="500">
+
+        <OnSwipe
+            app:dragDirection="dragUp"
+            app:touchAnchorId="@id/layout_bottom"
+            app:touchAnchorSide="top" />
+
+        <!--        <KeyFrameSet>-->
+        <!--            <KeyPosition-->
+        <!--                app:framePosition="50"-->
+        <!--                app:keyPositionType="deltaRelative"-->
+        <!--                app:percentY="0.5"-->
+        <!--                app:percentX="1"-->
+        <!--                app:motionTarget="@id/btn_custom"/>-->
+
+        <!--            <KeyPosition-->
+        <!--                app:framePosition="50"-->
+        <!--                app:keyPositionType="deltaRelative"-->
+        <!--                app:percentY="0.5"-->
+        <!--                app:percentX="1"-->
+        <!--                app:motionTarget="@id/btn_illegal_park"/>-->
+        <!--        </KeyFrameSet>-->
+
+        <KeyFrameSet>
+            <KeyPosition
+                app:framePosition="50"
+                app:keyPositionType="deltaRelative"
+                app:percentY="0.5"
+                app:percentX="0.6"
+                app:motionTarget="@id/btn_custom"/>
+
+            <KeyPosition
+                app:framePosition="50"
+                app:keyPositionType="deltaRelative"
+                app:percentY="0.5"
+                app:percentX="0.6"
+                app:motionTarget="@id/btn_illegal_park"/>
+        </KeyFrameSet>
+
+
+
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint android:id="@+id/layout_bottom">
+            <Layout
+                android:layout_width="0dp"
+                android:layout_height="240dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/space" />
+            <CustomAttribute
+                app:attributeName="BackgroundColor"
+                app:customColorValue="@color/colorAccent" />
+        </Constraint>
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint android:id="@id/layout_bottom">
+            <Layout
+                android:layout_width="0dp"
+                android:layout_height="240dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+            <CustomAttribute
+                app:attributeName="BackgroundColor"
+                app:customColorValue="@color/colorPrimary" />
+        </Constraint>
+
+        <Constraint
+            android:id="@id/btn_custom"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@mipmap/icon_custom"
+            app:layout_constraintBottom_toTopOf="@id/layout_bottom"
+            app:layout_constraintLeft_toRightOf="@+id/btn_location" />
+
+        <Constraint
+            android:id="@+id/btn_illegal_park"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="left|bottom"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@mipmap/ic_illegal_park"
+            app:layout_constraintBottom_toTopOf="@id/layout_bottom"
+            app:layout_constraintLeft_toRightOf="@id/btn_custom" />
+    </ConstraintSet>
+</MotionScene>

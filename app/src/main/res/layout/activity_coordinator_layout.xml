@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    android:background="@color/contentBackground"
+    tools:context=".CoordinatorLayoutActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <com.heiko.mymotionlayouttest.utils.CollapsibleToolbar
+            android:id="@+id/motionLayout"
+            app:layoutDescription="@xml/scene_09"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="50dp"
+            android:fitsSystemWindows="false"
+            app:layout_scrollFlags="scroll|enterAlways|snap|exitUntilCollapsed">
+
+            <ImageView
+                android:id="@+id/background"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/colorAccent"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/monterey"/>
+
+            <TextView
+                android:id="@+id/label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:transformPivotX="0dp"
+                android:transformPivotY="0dp"
+                android:text="Monterey"
+                android:textColor="#FFF"
+                android:textSize="32dp" />
+
+            <TextView
+                android:id="@+id/sublabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="California"
+                android:textColor="#FFF"
+                android:textSize="24sp"
+                app:fontFamily="cursive" />
+
+        </com.heiko.mymotionlayouttest.utils.CollapsibleToolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_scrolling" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
