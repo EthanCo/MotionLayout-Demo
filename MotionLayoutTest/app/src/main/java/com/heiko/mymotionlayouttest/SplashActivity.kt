@@ -5,6 +5,14 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.heiko.mymotionlayouttest.databinding.ActivitySplashBinding
 
+/**
+ * 具体详见
+ * https://developer.android.google.cn/training/constraint-layout/motionlayout/examples?hl=zh_cn
+ * https://blog.csdn.net/u013762572/article/details/90347011
+ *
+ * 官方示例:
+ * https://github.com/android/views-widgets-samples/tree/master/ConstraintLayoutExamples
+ */
 class SplashActivity : AppCompatActivity() {
     private lateinit var binding: ActivitySplashBinding
 

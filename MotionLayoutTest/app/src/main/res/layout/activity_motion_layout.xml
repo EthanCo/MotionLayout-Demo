@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/motionLayout"
     app:layoutDescription="@xml/activity_main_scene"
-    app:showPaths="true"
+    app:showPaths="false"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -16,5 +16,15 @@
         android:text="Button"
         tools:layout_editor_absoluteX="147dp"
         tools:layout_editor_absoluteY="230dp" />
+
+    <Button
+        android:id="@+id/btn_toggle"
+        android:text="toggle"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 </androidx.constraintlayout.motion.widget.MotionLayout>

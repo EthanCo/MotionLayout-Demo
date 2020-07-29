@@ -13,14 +13,14 @@ class TransitionManagerGoActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_transition_manager_go)
+        setContentView(R.layout.activity_transition_manager_go_start)
         bindData()
     }
 
     override fun onClick(v: View) {
         val root = findViewById<ViewGroup>(R.id.root)
-        val startScene = Scene.getSceneForLayout(root, R.layout.activity_transition_manager_go, this)
-        val endScene = Scene.getSceneForLayout(root, R.layout.activity_main_end, this)
+        val startScene = Scene.getSceneForLayout(root, R.layout.activity_transition_manager_go_start, this)
+        val endScene = Scene.getSceneForLayout(root, R.layout.activity_transition_manager_go_end, this)
         if (toggle) {
             TransitionManager.go(endScene, ChangeBounds())
         } else {
